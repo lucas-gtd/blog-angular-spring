@@ -1,0 +1,83 @@
+<div class="container">
+  <form>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input
+        [(ngModel)]="email"
+        name="emailInput"
+        type="email"
+        class="form-control"
+        id="exampleInputEmail1"
+        aria-describedby="emailHelp"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input
+        [(ngModel)]="password"
+        name="passInput"
+        type="password"
+        class="form-control"
+        id="exampleInputPassword1"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword11" class="form-label"
+        >Password confirm</label
+      >
+      <input
+        [(ngModel)]="passwordConfirm"
+        name="passConfInput"
+        type="password"
+        class="form-control"
+        id="exampleInputPassword11"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="fnameI" class="form-label">First Name</label>
+      <input
+        [(ngModel)]="firstname"
+        name="firstnameI"
+        type="text"
+        class="form-control"
+        id="fnameI"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="lnameI" class="form-label">Last Name</label>
+      <input
+        [(ngModel)]="lastname"
+        name="lastnameI"
+        type="text"
+        class="form-control"
+        id="lnameI"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="ageI" class="form-label">Age</label>
+      <input
+        [(ngModel)]="age"
+        name="ageI"
+        type="number"
+        class="form-control"
+        id="ageI"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="adressI" class="form-label">Adress</label>
+      <input
+        [(ngModel)]="adress"
+        name="adressI"
+        type="text"
+        class="form-control"
+        id="adressI"
+      />
+    </div>
+    <button (click)="registerUser()" type="submit" class="btn btn-primary">
+      Submit
+    </button>
+    <p>
+      <em>Déjà inscrit ? <a [routerLink]="['/']">Connectez-vous</a></em>
+    </p>
+  </form>
+</div>
